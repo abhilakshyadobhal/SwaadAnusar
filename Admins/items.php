@@ -43,7 +43,7 @@ include('connection.php');
 		</div>
  
 <div id="itemModal" class="modal fade">
- <div class="modal-dialog">
+ <div class="modal-dialog modal-dialog-centered">
   <form method="post" id="item_form" enctype="multipart/form-data">
    <div class="modal-content">
     <div class="modal-header">
