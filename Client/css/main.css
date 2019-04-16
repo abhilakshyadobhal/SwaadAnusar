@@ -1,0 +1,433 @@
+body{
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+body
+{
+  overflow-x: hidden;
+}
+::-webkit-scrollbar-track{
+  background-color:black;
+}
+::-webkit-scrollbar-thumb {
+  background-color:white;
+}
+::-webkit-scrollbar{
+  width:1px;
+}
+
+
+/* 
+
+top-header css
+
+*/
+
+.header-top {
+    padding: 0.5em 0;
+        background: #ff934b;
+    background: -moz-linear-gradient(-45deg, #ff934b 0%, #ff5e62 100%);
+    background: -webkit-linear-gradient(-45deg, #ff934b 0%, #ff5e62 100%);
+    background: linear-gradient(135deg, #ff934b 0%, #ff5e62 100%);
+
+}
+
+.admin-signin a{
+    margin-right: 35px; 
+}
+
+.admin-signin a:hover{
+    text-decoration: none;
+}
+
+/* 
+navbar css
+ */
+
+.bg-dark{
+    background: #121618 !important;
+    z-index: 3;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 24px; 
+    font-family: "Josefin Sans", Arial, sans-serif;
+}
+.navbar-brand span{
+    color: #fac564;
+    font-size: 28px;
+}
+.navbar-nav > .nav-item > .nav-link {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+
+.navbar-nav > .nav-item > .nav-link:hover{
+  color: #fac564;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link {
+    color: #fac564;
+}
+
+.dropdown-menu{
+    background: #121618;
+}
+
+.dropdown-item:hover{
+    background: #121618;
+}
+/* 
+main css
+ */
+
+
+ header {
+  position: relative;
+  background-color: black;
+  height: 90vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  opacity: 0.5;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+.subheading {
+    font-family: "Nothing You Could Do", cursive;
+    font-size: 36px;
+    color: #fac564;
+}
+
+.caption h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #fff;
+    line-height: 1.5;
+    font-weight: normal;
+    font-family: "Josefin Sans", Arial, sans-serif  ;
+    letter-spacing: 1px;
+}
+
+.caption p {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 300;
+    color: white;
+}
+
+.caption .btn.btn-primary {
+    background: #fac564;
+    border: 1px solid #fac564;
+    color: #000;
+    font-size: 12px;
+}
+
+/* 
+services section
+*/
+
+.ftco-section {
+    padding: 7em 0;
+}
+.ftco-services {
+    background: white;
+}
+
+.ftco-services .heading-section h2 {
+    color: black;
+    font-family: "Josefin Sans", Arial, sans-serif;
+}
+
+.heading-section h2 {
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.heading-section p.flip {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.heading-section p.flip:before {
+    position: absolute;
+    bottom: 4px;
+    left: 100px;
+    right: 0;
+    content: '';
+    width: 40px;
+    height: 1px;
+    background: #8d5d05;
+    margin: 0 auto;
+}
+
+.heading-section p.flip span.deg1 {
+    position: absolute;
+    bottom: 2px;
+    left: -30px;
+    right: 0;
+    width: 6px;
+    height: 6px;
+    content: '';
+    background: #fac564;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+    margin: 0 auto;
+}
+
+.heading-section p.flip span.deg2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    content: '';
+    background: #fac564;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+    margin: 0 auto;
+}
+
+.heading-section p.flip span.deg3 {
+    position: absolute;
+    bottom: 2px;
+    left: 30px;
+    right: 0;
+    width: 6px;
+    height: 6px;
+    content: '';
+    background: #fac564;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+    margin: 0 auto;
+}
+
+.heading-section p.flip:after {
+    position: absolute;
+    bottom: 4px;
+    left: -100px;
+    right: 0;
+    content: '';
+    width: 40px;
+    height: 1px;
+    background: #8d5d05;
+    margin: 0 auto;
+}
+
+.block-6 {
+    margin-bottom: 40px;
+}
+
+.services .icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 0;
+}
+
+.services .icon span {
+    font-size: 70px;
+    color: black;
+    z-index: 1;
+}
+
+.services .icon span:hover {
+
+    color:  #fac564;
+    -moz-transition:border 3s ease;
+    -o-transition: border 3s ease;
+    -webkit-transition: border 3s ease;
+    -ms-transition: border 3s ease;
+    transition: border 3s ease;
+}
+
+.services .media-body {
+    color: #5c3d03;
+}
+
+.media-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+}
+
+.services h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Josefin Sans", Arial, sans-serif;
+}
+
+ftco-animate {
+    opacity: 0;
+    visibility: hidden;
+}
+/* 
+footer css
+*/
+
+.footer{
+    background: url(../img/bg_4.jpg) no-repeat center;
+    padding: 90px 0px 40px;
+}
+
+a#brand:hover{
+    color: white;
+}
+.footer .social ul, .footer .hours ul{
+    list-style-type: none;
+}
+
+.footer .hours ul li{
+    font-size: 13px;
+    padding: 0.7em 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.footer .social ul li a{
+    color: white;
+}
+
+.footer .social ul li a:hover{
+    text-decoration: none;
+}
+
+.fab.fa-instagram {
+  color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 25px;
+}
+
+.fab.fa-facebook{
+    font-size: 25px;
+    color: #3b5998;
+}
+
+.fab.fa-twitter {
+    font-size: 25px;
+    color:#00aced;
+}
+
+.bold{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* 
+    menu css
+*/
+
+.menu{
+    height: 650px;
+    background: url(../img/bg_2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    opacity: 0.9;
+}
+
+ .menu:before {
+    content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: black;
+	opacity: .4; 
+  }
+
+h1#menu-heading{
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #fff;
+    line-height: 1.5;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+
+.menu-div{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.breadcrumbs span a{
+    color: white;
+}
+
+.breadcrumbs span a:hover{
+    text-decoration: none;
+    color: #fac564;
+}
+
+span#menu{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+.menu-wrap .menu-img {
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+
+.menu-wrap .text h3 {
+    font-size: 20px;
+}
+.menu-wrap .text h3 a:hover {
+    text-decoration: none;
+}
+.menu-wrap .text .price {
+    font-size: 16px;
+    font-weight: 400;
+}
+.btn.btn-white.btn-outline-white  {
+    background: #fac564;
+    border: 1px solid #fac564;
+    color: #000;
+    font-size: 12px;
+}
