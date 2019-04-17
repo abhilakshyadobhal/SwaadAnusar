@@ -61,8 +61,8 @@ navbar css
 .navbar-nav > .nav-item > .nav-link {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 18px;
+    padding-right: 18px;
     color: rgba(255, 255, 255, 0.7);
     font-size: 14px;
 }
@@ -71,10 +71,9 @@ navbar css
   color: #fac564;
 }
 
-.navbar-dark .navbar-nav .active>.nav-link {
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
     color: #fac564;
 }
-
 .dropdown-menu{
     background: #121618;
 }

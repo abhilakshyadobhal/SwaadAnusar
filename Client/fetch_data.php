@@ -25,7 +25,7 @@ if(isset($_POST["action"]))
                             <div class="text">
                                 <h4 class="mt-3">'.$row['item_name'].'</h4>
                                 <p class="price"><span>'.$row['item_price'].'</span></p>
-                                <p<a class="btn btn-primary" target="_blank" href="../resources/cart.php?add={'.$row['item_id'].'}">Add to cart</a></p>
+                                <p><a href="../resources/cart.php?add={'.$row['item_id'].'}" class="btn btn-white btn-outline-white">Add to cart</a></p>
                             </div>
                         </div>
                     </div>

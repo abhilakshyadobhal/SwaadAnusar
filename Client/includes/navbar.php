@@ -11,7 +11,7 @@ include_once('./login.php');
       </div>
       <div class="admin-signin ml-auto">
         <i class="fas fa-sign-in-alt mr-2"></i>
-        <a href="#" class="text-dark" data-toggle="modal" data-target="#adminsignin">Admin</a>
+        <a href="../Admins/login.php" class="text-dark">Admin</a>
       </div>
     </div>
   </div>
@@ -43,8 +43,8 @@ include_once('./login.php');
                 }
                 else
                 {
-                  echo "<li class='nav-item'><a data-toggle=\"modal\" data-target=\"#signinsignup\" class=\"nav-link\">Login | Signup</a></li>";
-                  
+                  echo "<li class='nav-item'><a data-toggle=\"modal\" data-target=\"#signinsignup\" class=\"nav-link\">Login</a></li>";
+                  echo "<li class='nav-item'><a data-toggle=\"modal\" data-target=\"#signinsignup\" class=\"nav-link\">SignUp</a></li>";
                 }
               ?>
         </ul>
