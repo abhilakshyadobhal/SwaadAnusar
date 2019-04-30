@@ -71,8 +71,8 @@ navbar css
   color: #fac564;
 }
 
-.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
-    color: #fac564;
+.navbar-nav>li.nav-item.active>a.nav-link{
+  color: #fac564;
 }
 .dropdown-menu{
     background: #121618;
@@ -297,6 +297,46 @@ ftco-animate {
     opacity: 0;
     visibility: hidden;
 }
+
+/* 
+location section
+ */
+
+ .location {
+    padding: 2em 0 0;
+    background: white;
+}
+
+#map-and-form {
+    background-color: #F7F9FB;
+}
+
+#map-form {
+    padding: 100px;
+}
+
+.map-form-input input {
+    outline: 0;
+    border-radius: 5px;
+    border: 1px solid #80808054;
+    padding: 7px 100px 7px 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+#map-form-button {
+    background-color: blue;
+    outline: none 0;
+    margin: 0;
+    border: 0;
+    padding: 10px 50px 10px 50px;
+    color: white;
+    box-shadow: 0 0 6px black;
+    position: relative;
+}
+
+
+
 /* 
 footer css
 */
@@ -410,8 +450,8 @@ span#menu{
 
 .menu-wrap .menu-img {
     display: block;
-    width: 200px;
-    height: 200px;
+    width: 197px;
+    height: 198px;
 }
 
 .menu-wrap .text h3 {

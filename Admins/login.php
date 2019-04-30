@@ -1,5 +1,5 @@
 <?php
-include('connection.php');
+require('connection.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -33,34 +33,38 @@ include('connection.php');
 <body class="text-center">
 
 <div class="container logindiv mt-5 pt-5">
-    <form class="form-signin" method="post">
+    <form class="form-signin" method="post" autocomplete="off">
         <img class="my-5" src="icon.svg" alt="" width="72" height="72">
         <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="text" id="inputText" class="form-control mb-4" placeholder="Admin Name" required="" autofocus="" name="adminname">
+        <input type="text" id="inputText" class="form-control mb-4" placeholder="Admin Name" required autocomplete="off" autofocus="" name="adminname" >
         <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control mb-4" placeholder="Password" required="" name="adminpassword">
+        <input type="password" id="inputPassword" class="form-control mb-4" placeholder="Password" required autocomplete="off" name="adminpassword" autocomplete="off">
         <button class="btn btn-lg btn-primary" type="submit" name='adminlogin'>Sign in</button>
     </form>
 </div>
 
+<?php  
+  if(isset($_POST['adminlogin']))
+  {
+    $name = $_POST['adminname'];
+    $password = $_POST['adminpassword'];
+    $query="select * from admins";
+    $result=mysqli_query($connect,$query);
+    while($row=mysqli_fetch_array($result))
+    {
+      $name1=$row[1];
+      $pass1=$row[2];
+      if($name==$name1 and $password==$pass1)
+      {
+        echo "<script>location.href='home.php';</script>";
+       }
+    }  
+            
+?>
+     <script type="text/javascript">alert("wrong user or password");</script> 
 <?php
-if(isset($_POST['adminlogin'])){
-$name = $_POST['adminname'];
-$password = $_POST['adminpassword'];
-$row = mysqli_fetch_array(mysqli_query($connect,"SELECT * FROM admins"));
-    while($row){
-        $id=$row[0];
-        $name1=$row[1];
-        $pass1=$row[2];
-        if($name==$name1 and $password==$pass1)
-        {
-            echo "<script>location.href='home.php';</script>";
-        }
-        else {
-            echo "<script>alert('wrong admin name and password');</script>";
-        }
+                         
     }
-}
 ?>
 
 <script src="./js/jquery.js"></script>

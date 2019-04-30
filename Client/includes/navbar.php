@@ -1,5 +1,6 @@
 <?php
 include_once('./login.php');
+include_once('./register.php');
 ?>
 
   <div class="header-top">
@@ -43,8 +44,8 @@ include_once('./login.php');
                 }
                 else
                 {
-                  echo "<li class='nav-item'><a data-toggle=\"modal\" data-target=\"#signinsignup\" class=\"nav-link\">Login</a></li>";
-                  echo "<li class='nav-item'><a data-toggle=\"modal\" data-target=\"#signinsignup\" class=\"nav-link\">SignUp</a></li>";
+                  echo "<li class='nav-item'><a data-toggle=\"modal\" data-target=\"#signin\" class=\"nav-link\">Login</a></li>";
+                  echo "<li class='nav-item'><a data-toggle=\"modal\" data-target=\"#signup\" class=\"nav-link\">SignUp</a></li>";
                 }
               ?>
         </ul>

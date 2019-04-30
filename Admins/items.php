@@ -15,8 +15,7 @@ include('connection.php');
 	       <th width="30%">Item Name</th>
 	       <th width="20%">Item Price</th>
 	       <th width="30%">Item Category</th>
-	       <th width="5%">Edit</th>
-	       <th width="5%">Delete</th>
+	       <th width="10%">Delete</th>
 	      </tr>
 	     </thead>
 	     <tbody>
@@ -31,7 +30,6 @@ include('connection.php');
                 	<td>'.$row["item_name"].'</td>
                 	<td>'.$row["item_price"].'</td>
                 	<td>'.$row["item_category"].'</td>
-                	<td><button align="right" type="button" class="btn btn-primary btn-sm" id="add_button" data-toggle="modal" data-target="#itemModal" autofocus="">Edit</button></td>
                 	<td><button align="right" type="button" class="btn btn-danger btn-sm" id="add_button" data-toggle="modal" data-target="#itemModal" autofocus="">Delete</button></td>
                 </tr>
                 ';

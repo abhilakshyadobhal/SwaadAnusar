@@ -16,10 +16,6 @@
     <link rel="stylesheet" href="./css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="./css/ionicons.min.css">
     <link rel="stylesheet" href="./css/icomoon.css">
-    <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
-  <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>  
-  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css" />
-
     <!-- main css file -->
     <link rel="stylesheet" href="./css/main.css">
 
@@ -40,7 +36,8 @@
                     <div class="container-fluid my-4">
                         <div class="header-wrap col-md-12 row mt-auto mb-auto">
                             <div class="content ml-auto mr-5">
-                                <a class="js-acc-btn text-white" href="#">ADMIN</a>
+                                <a class="js-acc-btn admin" href="home.php">ADMIN</a>
+                                <a class="js-acc-btn pl-5 admin" href="login.php">LOGOUT</a>
                             </div> 
                         </div>
                     </div>

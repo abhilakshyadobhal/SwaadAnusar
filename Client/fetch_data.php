@@ -25,7 +25,7 @@ if(isset($_POST["action"]))
                             <div class="text">
                                 <h4 class="mt-3">'.$row['item_name'].'</h4>
                                 <p class="price"><span>'.$row['item_price'].'</span></p>
-                                <p><a href="../resources/cart.php?add={'.$row['item_id'].'}" class="btn btn-white btn-outline-white">Add to cart</a></p>
+                                <p><a href="cart.php?item_id='.$row['item_id'].'" class="btn btn-white btn-outline-white">Add to cart</a></p>
                             </div>
                         </div>
                     </div>
@@ -51,6 +51,7 @@ if(isset($_POST["action"]))
 	{
 		while($row = mysqli_fetch_assoc($result))
 		{
+            $id=$row['item_id'];
             $output .= '
                 <div class="col-md-3 card mb-4 mr-5 pt-2 px-2 text-center">
                         <div class="menu-wrap">
@@ -58,7 +59,7 @@ if(isset($_POST["action"]))
                             <div class="text">
                                 <h4 class="mt-3">'.$row['item_name'].'</h4>
                                 <p class="price"><span>'.$row['item_price'].'</span></p>
-                                <p><a href="cart.php" class="btn btn-white btn-outline-white">Add to cart</a></p>
+                                <p><a href="cart.php?item_id='.$row['item_id'].'" class="btn btn-white btn-outline-white">Add to cart</a></p>
                             </div>
                         </div>
                     </div>

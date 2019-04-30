@@ -96,6 +96,15 @@ body
     z-index: 3;
 }
 
+a.admin{
+    color: white;
+}
+
+a.admin:hover{
+    text-decoration: none;
+    color: #fac564;
+}
+
 .maincontent{
 	margin:75px 0px 0px 250px;
 	padding-top: 20px;

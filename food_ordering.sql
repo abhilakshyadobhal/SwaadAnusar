@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 17, 2019 at 04:25 PM
+-- Generation Time: Apr 21, 2019 at 07:01 PM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.10
 
@@ -98,11 +98,34 @@ INSERT INTO `item` (`item_id`, `item_name`, `item_price`, `item_image`, `item_ca
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `orders`
+--
+
+CREATE TABLE `orders` (
+  `order_id` int(11) NOT NULL,
+  `customer_name` varchar(20) NOT NULL,
+  `item_name` varchar(200) NOT NULL,
+  `item_category` varchar(20) NOT NULL,
+  `item_price` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `orders`
+--
+
+INSERT INTO `orders` (`order_id`, `customer_name`, `item_name`, `item_category`, `item_price`) VALUES
+(1, 'srijeet', 'Italian Pizza', 'Pizza', 250),
+(2, 'rohit', 'Italian Pizza', 'Pizza', 250),
+(3, 'rohit', 'American Pizza', 'Burger', 350);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `users`
 --
 
 CREATE TABLE `users` (
-  `id` int(5) NOT NULL,
+  `id` int(11) NOT NULL,
   `name` varchar(200) NOT NULL,
   `email` varchar(200) NOT NULL,
   `password` varchar(200) NOT NULL
@@ -113,8 +136,12 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`) VALUES
-(1, 'abhi', 'abhi@gmail.com', 'Abhi@123'),
-(2, 'srijeet', 'srijeet@gmail.com', 'Srijeet@123');
+(1, 'abhi', 'abhi@gmail.com', 'Abhi@7'),
+(2, 'srijeet', 'srijeet@gmail.com', 'Srijeet@7'),
+(3, 'vikas', 'vikas@gmail.com', 'Vikas@7'),
+(4, 'sandip', 'sandipghosh@gmail.com', 'Sandip@7'),
+(5, 'kishan', 'kishan@gmail.com', 'Kishan@7'),
+(6, 'rohit', 'rohit@gmail.com', 'Rohit@7');
 
 --
 -- Indexes for dumped tables
@@ -137,6 +164,12 @@ ALTER TABLE `category`
 --
 ALTER TABLE `item`
   ADD PRIMARY KEY (`item_id`);
+
+--
+-- Indexes for table `orders`
+--
+ALTER TABLE `orders`
+  ADD PRIMARY KEY (`order_id`);
 
 --
 -- Indexes for table `users`
@@ -167,10 +200,16 @@ ALTER TABLE `item`
   MODIFY `item_id` int(7) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
+-- AUTO_INCREMENT for table `orders`
+--
+ALTER TABLE `orders`
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
